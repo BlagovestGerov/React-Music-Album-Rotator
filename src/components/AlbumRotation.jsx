@@ -76,6 +76,12 @@ const AlbumRotation = () => {
                     <li key={index}>{item}</li>
                 ))}
             </ul>
+        <button
+          type='button'
+          onClick={() => { window.open('https://github.com/BlagovestGerov/React-Music-Album-Rotator') }}
+          className='black_btn'>
+          GitHub
+        </button>
         </div>
     );
 }

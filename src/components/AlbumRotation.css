@@ -40,4 +40,11 @@
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+
+  .black_btn{
+    border-radius: 9999px;
+    background: black;
+    color: white;
+    cursor: pointer;
+  }
   

@@ -22,7 +22,6 @@ const AlbumRotation = () => {
         const intervalId = setInterval(() => {
             setList(prevList => {
                 const prevListWithoutTheLastEl = prevList.slice(0, -1);
-                const fifth = prevList[4];
                 if (prevListWithoutTheLastEl.length >= 5) {
                     prevListWithoutTheLastEl.splice(4, 1);
                 }

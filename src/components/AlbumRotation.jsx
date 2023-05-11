@@ -44,7 +44,7 @@ const AlbumRotation = () => {
                     .then(async (response) => {
                         const albumNames = await response.data.results
                             .map((result) => result.collectionName)
-                            .sort()
+                            .sort((a, b) => a.localeCompare(b))
                             .slice(0, 5);
                         setList((prevAlbum) => {
                             const [one, two, three, four, five, ...rest] = prevAlbum;
